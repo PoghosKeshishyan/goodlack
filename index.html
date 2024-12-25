@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheets/index.css">
+    <link rel="stylesheet" href="./stylesheets/layout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="./routes/index.js" defer></script>
+    <title>ГУД ЛАКК</title>
+  </head>
+  <body>
+    <header>
+      <div style="display: flex; align-items: center; gap: 1rem">
+        <div class="menu_bar">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <a href="#" class="logo">
+          <span class="title">ГУД ЛАКК</span>
+          <span class="sub_title">ДЛЯ ВАШЕГО ДОМА</span>
+        </a>
+      </div>
+
+      <div class="search_bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Поиск по названию или артикулу" />
+      </div>
+
+      <div class="close_search_bar">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+
+      <div class="search_container">
+        <div class="head">
+          <h2 class="heading">Популярные товары</h2>
+          <a href="#" class="see_more">Смотреть все товары</a>
+        </div>
+
+        <div class="box_container">
+          <div class="box">
+            <img alt="popular" src="./images/popular-goods/popular1.1.png" />
+
+            <img
+              alt="popular"
+              class="hover-popular"
+              src="./images/popular-goods/popular1.2.png" />
+
+            <h3 class="title">ПЕГАС шкаф 3 двери сборные</h3>
+            <p class="description">Шкаф ПЕГАС трехдверный с рамочным фасадом</p>
+          </div>
+
+          <div class="box">
+            <img alt="popular" src="./images/popular-goods/popular2.1.png" />
+
+            <img
+              alt="popular"
+              class="hover-popular"
+              src="./images/popular-goods/popular2.2.png" />
+
+            <h3 class="title">ВАРМА 3 комод</h3>
+            <p class="description">Комод Варма 3 с тремя выдвижными ящиками</p>
+          </div>
+
+          <div class="box">
+            <img alt="popular" src="./images/popular-goods/popular3.1.png" />
+
+            <img
+              alt="popular"
+              class="hover-popular"
+              src="./images/popular-goods/popular3.2.png" />
+
+            <h3 class="title">ТИЛАУС диван</h3>
+            <p class="description">
+              Диван угловой трехместный Тилаус с коротким подлокотником
+            </p>
+          </div>
+
+          <div class="box">
+            <img alt="popular" src="./images/popular-goods/popular4.1.png" />
+
+            <img
+              alt="popular"
+              class="hover-popular"
+              src="./images/popular-goods/popular4.2.png" />
+
+            <h3 class="title">ФОРА стеллаж</h3>
+            <p class="description">
+              Стеллаж Фора 12 широкий стеллаж с открытыми ячейками
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="client">
+        <div class="item search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div class="item">
+          <i class="fa-solid fa-house"></i>
+          <p>Адреса магазинов</p>
+        </div>
+
+        <div class="item">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>Выберите город</p>
+        </div>
+
+        <div class="item">
+          <i class="fa-solid fa-user"></i>
+          <p>Личный кабинет</p>
+        </div>
+
+        <div class="item">
+          <i class="fa-solid fa-basket-shopping"></i>
+        </div>
+      </div>
+    </header>
+
+    <aside>
+      <div class="dark_bg"></div>
+
+      <div class="sidebar">
+        <!-- <div><i class="fas fa-bars"></i></div> -->
+        <div class="sidebar_head">
+          <div class="logo">
+            <span class="icon">
+              <i class="fas fa-times"></i>
+            </span>
+            <div>
+              <h2>ГУД ЛАКК</h2>
+              <span class="sub_heading">для вашего дома </span>
+            </div>
+          </div>
+            <div class="sidebar_links">
+                <h2 class="catalog_prod"> <span class="hide"></span> Каталог товаров</h2>
+                <div class="catalog">
+                  <div class="catalog_link hide">
+                    <a href="#" data-product="comodProduct">Комоды </a>
+                    <a href="#" data-product="catalogCabinets" >Тумбы</a>
+                    <a href="#" data-product="catalogBedsBedsideTables">Кровати прикроватные Тумбы</a>
+                    <a href="#" data-product="catalogCloset">Шкафы</a>
+                    <a href="#" data-product="catalogShelving">Стеллажи</a>
+                    <a href="#" data-product="ctatalogTableAndChairs">Столы и стулья</a>
+                    <a href="#" data-product="catalogCushionedFurniture">мебель Зеркала</a>
+                    <a href="#" data-product="catalogMirrorsHangersAndShelves"> вешалки и полки</a>
+                  </div>
+                 </div>
+                <div class="catalog_items"></div>
+            <div class="info">
+                  <h2 class="info_heading"><a href="#">Доставка и оплата</a></h2>
+                  <h2><a href="#">Дилерам</a></h2>
+              <div class="sidebar_info" id="sidebarInfo">
+                <a href="#">Доставка и оплата</a>
+                <a href="#">Розыгрыш призов</a>
+                <a href="#">Вопросы и ответы</a>
+                <a href="#">Контакты</a>
+                <a href="#">О компании</a>
+                <a href="#">Мероприятия</a>
+                <a href="#" class="line">Стать дилером</a>
+              </div>
+              <div class="sidebar_footer" id="sidebarFooter">
+                <a href="#"><i class="fa-solid fa-house"></i> Адреса магазинов </a>
+                <a href="#"><i class="fa-solid fa-location"></i> Выберите город</a>
+              </div>
+          </div>
+            </div>
+         </div>
+      </div>
+  
+
+    </aside>
+
+    <main>
+      <section class="home">
+        <div class="slider">
+          <div class="slider_btns">
+            <button class="btn_slide prev">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <button class="btn_slide next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+
+          <div class="slider_controls">
+            <!-- Slider controls will be added dynamically using JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="box_container">
+          <div class="box">
+            <img
+              class="box_image1"
+              src="./images/about/about1.png"
+              alt="about" />
+            <img
+              class="box_image2"
+              src="./images/about/about2.png"
+              alt="about" />
+          </div>
+
+          <div class="box">
+            <h2 class="heading">
+              Концепция <br />
+              <span>удобной</span> жизни
+            </h2>
+
+            <img
+              class="box_image3"
+              src="./images/about/about3.png"
+              alt="about" />
+
+            <p class="description">
+              Уход IKEA - не повод отказываться от привычного стиля в интерьере.
+              Поэтому, благодаря проекту ГУД ЛАКК - прямо сейчас у вас появилась
+              возможность купить те самые любимые товары. Да, они немного
+              поменяли внешний вид и названия. Но дизайн, качество, простота
+              покупки и легкость сборки – все это осталось на прежней высоте.
+              <a class="btn" href="#">Подробнее
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="carousel_slider">
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+          ">
+          <h2 class="heading">Популярные товары</h2>
+          <a href="#">Смотреть все товары</a>
+        </div>
+
+        <div class="container swiper">
+          <div class="slide-container">
+            <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="./images/carousel-slider/slider.png" alt />
+                  <div class="hoverImage">
+                    <img src="./images/carousel-slider/slider18.png" alt />
+                  </div>
+                </div>
+
+                <div class="content">
+                  <h3>Шкаф ПЕГАС трехдверный с рамочным фасадом</h3>
+                  <p>Комод Варма 3 с тремя выдвижными ящиками</p>
+                </div>
+              </div>
+
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="./images/carousel-slider/slider1.png" alt />
+                  <div class="hoverImage">
+                    <img src="./images/carousel-slider/slider14.png" alt />
+                  </div>
+                </div>
+
+                <div class="content">
+                  <h3>Шкаф ПЕГАС трехдверный с рамочным фасадом</h3>
+                  <p>Комод Варма 3 с тремя выдвижными ящиками</p>
+                </div>
+              </div>
+
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="./images/carousel-slider/slider2.png" alt />
+                  <div class="hoverImage">
+                    <img src="./images/carousel-slider/slider13.png" alt />
+                  </div>
+                </div>
+
+                <div class="content">
+                  <h3>Шкаф ПЕГАС трехдверный с рамочным фасадом</h3>
+                  <p>Комод Варма 3 с тремя выдвижными ящиками</p>
+                </div>
+              </div>
+
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="./images/carousel-slider/slider4.png" alt />
+                  <div class="hoverImage">
+                    <img src="./images/carousel-slider/slider18.png" alt />
+                  </div>
+                </div>
+
+                <div class="content">
+                  <h3>Шкаф ПЕГАС трехдверный с рамочным фасадом</h3>
+                  <p>Комод Варма 3 с тремя выдвижными ящиками</p>
+                </div>
+              </div>
+
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="./images/carousel-slider/slider5.jpg" alt />
+                  <div class="hoverImage">
+                    <img src="./images/carousel-slider/slider13.png" alt />
+                  </div>
+                </div>
+
+                <div class="content">
+                  <h3>Шкаф ПЕГАС трехдверный с рамочным фасадом</h3>
+                  <p>Комод Варма 3 с тремя выдвижными ящиками</p>
+                </div>
+              </div>
+
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="./images/carousel-slider/slider6.png" alt />
+                  <div class="hoverImage">
+                    <img src="./images/carousel-slider/slider14.png" alt />
+                  </div>
+                </div>
+
+                <div class="content">
+                  <h3>Шкаф ПЕГАС трехдверный с рамочным фасадом</h3>
+                  <p>Комод Варма 3 с тремя выдвижными ящиками</p>
+                </div>
+              </div>
+
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="./images/carousel-slider/slider7.png" alt />
+                  <div class="hoverImage">
+                    <img src="./images/carousel-slider/slider18.png" alt />
+                  </div>
+                </div>
+
+                <div class="content">
+                  <h3>Шкаф ПЕГАС трехдверный с рамочным фасадом</h3>
+                  <p>Комод Варма 3 с тремя выдвижными ящиками</p>
+                </div>
+              </div>
+
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="./images/carousel-slider/slider8.png" alt />
+                  <div class="hoverImage">
+                    <img src="./images/carousel-slider/slider13.png" alt />
+                  </div>
+                </div>
+
+                <div class="content">
+                  <h3>Шкаф ПЕГАС трехдверный с рамочным фасадом</h3>
+                  <p>Комод Варма 3 с тремя выдвижными ящиками</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+        </div>
+      </section>
+
+      <section class="catalog">
+        <h2 class="heading">Каталог мебели</h2>
+
+        <div class="box_container">
+          <div class="box">
+            <a href="#">
+              <span>Комоды</span>
+              <i class="fa-solid fa-arrow-right"></i>
+              <img src="./images/catalog/catalog1.png" alt="catalog" />
+            </a>
+          </div>
+
+          <div class="box">
+            <a href="#">
+              <span>Кровати, прикроватные тумбы</span>
+              <i class="fa-solid fa-arrow-right"></i>
+              <img src="./images/catalog/catalog2.png" alt="catalog" />
+            </a>
+          </div>
+
+          <div class="box">
+            <a href="#">
+              <span>Стеллажи</span>
+              <i class="fa-solid fa-arrow-right"></i>
+              <img src="./images/catalog/catalog3.png" alt="catalog" />
+            </a>
+          </div>
+
+          <div class="box">
+            <a href="#">
+              <span>Мягкая мебель</span>
+              <i class="fa-solid fa-arrow-right"></i>
+              <img src="./images/catalog/catalog4.png" alt="catalog" />
+            </a>
+          </div>
+
+          <div class="box">
+            <a href="#">
+              <span>Тумбы</span>
+              <i class="fa-solid fa-arrow-right"></i>
+              <img src="./images/catalog/catalog5.png" alt="catalog" />
+            </a>
+          </div>
+
+          <div class="box">
+            <a href="#">
+              <span>Шкафы</span>
+              <i class="fa-solid fa-arrow-right"></i>
+              <img src="./images/catalog/catalog6.png" alt="catalog" />
+            </a>
+          </div>
+
+          <div class="box">
+            <a href="#">
+              <span>Столы и стулья</span>
+              <i class="fa-solid fa-arrow-right"></i>
+              <img src="./images/catalog/catalog7.png" alt="catalog" />
+            </a>
+          </div>
+
+          <div class="box">
+            <a href="#">
+              <span>Зеркала, вешалки и полки</span>
+              <i class="fa-solid fa-arrow-right"></i>
+              <img src="./images/catalog/catalog8.png" alt="catalog" />
+            </a>
+          </div>
+        </div>
+
+        <a href="#" class="btn">
+          Перейти в каталог
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </section>
+
+      <section class="suppiler">
+        <div class="container">
+          <h2 class="heading">Стать дилером</h2>
+
+          <p class="description">
+            Хотите продавать нашу мебель? Заполните форму ниже и наш менеджер
+            свяжется с вами для уточнения деталей
+          </p>
+
+          <form>
+            <input type="text" placeholder="Название компании" />
+            <input type="url" placeholder="Сайт" />
+            <input type="text" placeholder="Ваше имя" />
+            <input type="email" placeholder="Email" />
+            <input type="tel" placeholder="+374 ## ### ###" />
+
+            <button type="submit" class="btn">
+              Отправить заявку
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+
+          <p class="warning">* Предложение не является публичной офертой.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="box_container">
+        <!-- Footer data will be added dynamically using JavaScript -->
+      </div>
+
+      <div class="social_media">
+        <i class="fa-brands fa-telegram"></i>
+        <i class="fa-brands fa-vk"></i>
+      </div>
+
+      <div class="scroll_top">
+        <i class="fa-solid fa-chevron-up"></i>
+      </div>
+    </footer>
+  </body>
+</html>

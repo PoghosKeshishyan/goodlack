@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheets/detail.css">
+    <link rel="stylesheet" href="../stylesheets/layout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="../routes/detail.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div style="display: flex; align-items: center; gap: 1rem">
+            <div class="menu_bar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <a href="../index.html" class="logo">
+                <span class="title">ГУД ЛАКК</span>
+                <span class="sub_title">ДЛЯ ВАШЕГО ДОМА</span>
+            </a>
+        </div>
+
+        <div class="search_bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Поиск по названию или артикулу" />
+        </div>
+
+        <div class="close_search_bar">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <div class="search_container">
+            <div class="head">
+                <h2 class="heading">Популярные товары</h2>
+                <a href="#" class="see_more">Смотреть все товары</a>
+            </div>
+
+            <div class="box_container">
+                <div class="box">
+                    <img alt="popular" src="../images/popular-goods/popular1.1.png" />
+
+                    <img alt="popular" class="hover-popular" src="../images/popular-goods/popular1.2.png" />
+
+                    <h3 class="title">ПЕГАС шкаф 3 двери сборные</h3>
+                    <p class="description">Шкаф ПЕГАС трехдверный с рамочным
+                        фасадом</p>
+                </div>
+
+                <div class="box">
+                    <img alt="popular" src="../images/popular-goods/popular2.1.png" />
+
+                    <img alt="popular" class="hover-popular" src="../images/popular-goods/popular2.2.png" />
+
+                    <h3 class="title">ВАРМА 3 комод</h3>
+                    <p class="description">Комод Варма 3 с тремя выдвижными
+                        ящиками</p>
+                </div>
+
+                <div class="box">
+                    <img alt="popular" src="../images/popular-goods/popular3.1.png" />
+
+                    <img alt="popular" class="hover-popular" src="../images/popular-goods/popular3.2.png" />
+
+                    <h3 class="title">ТИЛАУС диван</h3>
+                    <p class="description">
+                        Диван угловой трехместный Тилаус с коротким
+                        подлокотником
+                    </p>
+                </div>
+
+                <div class="box">
+                    <img alt="popular" src="../images/popular-goods/popular4.1.png" />
+
+                    <img alt="popular" class="hover-popular" src="../images/popular-goods/popular4.2.png" />
+
+                    <h3 class="title">ФОРА стеллаж</h3>
+                    <p class="description">
+                        Стеллаж Фора 12 широкий стеллаж с открытыми ячейками
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="client">
+            <div class="item search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="item">
+                <i class="fa-solid fa-house"></i>
+                <p>Адреса магазинов</p>
+            </div>
+
+            <div class="item">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Выберите город</p>
+            </div>
+
+            <div class="item">
+                <i class="fa-solid fa-user"></i>
+                <p>Личный кабинет</p>
+            </div>
+
+            <div class="item">
+                <i class="fa-solid fa-basket-shopping"></i>
+            </div>
+        </div>
+    </header>
+
+    <aside>
+        <div class="dark_bg"></div>
+
+        <div class="sidebar">
+            <div class="logo">
+                <span class="icon">
+                    <i class="fas fa-times"></i>
+                </span>
+                <div>
+                    <h2>ГУД ЛАКК</h2>
+                    <span class="sub_heading">для вашего дома</span>
+                </div>
+            </div>
+
+            <div class="sidebar_links">
+                <h2 class="catalog_prod">
+                    <span class="hide">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </span>
+                    Каталог товаров
+                </h2>
+
+                <div class="catalog">
+                    <div class="catalog_link hide">
+                        <a href="#" data-product="comodProduct">
+                            Комоды
+                        </a>
+
+                        <a href="#" data-product="catalogCabinets">
+                            Тумбы
+                        </a>
+
+                        <a href="#" data-product="catalogBedsBedsideTables">
+                            Кровати прикроватные Тумбы
+                        </a>
+
+                        <a href="#" data-product="catalogCloset">
+                            Шкафы
+                        </a>
+
+                        <a href="#" data-product="catalogShelving">
+                            Стеллажи
+                        </a>
+
+                        <a href="#" data-product="ctatalogTableAndChairs">
+                            Столы и стулья
+                        </a>
+
+                        <a href="#" data-product="catalogCushionedFurniture">
+                            Мебель Зеркала
+                        </a>
+
+                        <a href="#" data-product="catalogMirrorsHangersAndShelves">
+                            Вешалки и Полки
+                        </a>
+                    </div>
+                </div>
+
+                <div class="catalog_items"></div>
+                <div class="info">
+                    <h2 class="info_heading"><a href="#">Доставка и
+                            оплата</a></h2>
+                    <h2><a href="#">Дилерам</a></h2>
+                    <div class="sidebar_info" id="sidebarInfo">
+                        <a href="#">Доставка и оплата</a>
+                        <a href="#">Розыгрыш призов</a>
+                        <a href="#">Вопросы и ответы</a>
+                        <a href="#">Контакты</a>
+                        <a href="#">О компании</a>
+                        <a href="#">Мероприятия</a>
+                        <a href="#" class="line">Стать дилером</a>
+                    </div>
+                    <div class="sidebar_footer" id="sidebarFooter">
+                        <a href="#"><i class="fa-solid fa-house"></i> Адреса
+                            магазинов
+                        </a>
+                        <a href="#"><i class="fa-solid fa-location"></i>
+                            Выберите город</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </aside>
+
+    <main>
+        <div class="modal">
+            <button class="modal_close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="modal_content">
+                <div class="collection">
+                    <div class="collection_head">
+                        <div class="collection_gallery">
+                            <div class="photo_gallery_horizontal">
+                                <div class="photo_gallery_body">
+
+                                    <div class="photo_gallery_media">
+                                        <img src="../images/modal/modal1.png" alt="modal1" />
+                                    </div>
+
+                                </div>
+
+                                <div class="photo_gallery_list">
+                                    <button class="photo_gallery_list_item active">
+                                        <img src="../images/modal/modal1.png" alt>
+                                    </button>
+
+                                    <button class="photo_gallery_list_item">
+                                        <img src="../images/modal/modal2.png" alt>
+                                    </button>
+
+                                    <button class="photo_gallery_list_item">
+                                        <img src="../images/modal/modal3.png" alt>
+                                    </button>
+
+                                    <button class="photo_gallery_list_item">
+                                        <img src="../images/modal/modal4.png" alt>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="collection_content">
+                                <div class="collection_title">
+                                    <h2>КАСТОР комод 5 ящиков RU белый</h2>
+                                    <div class="collection_rating">
+                                        <div class="colection_rating_list">
+                                            <div class="rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <button class="collection_rating_button">0
+                                            отзывов</button>
+                                    </div>
+                                </div>
+                                <div class="collection_price">
+                                    <p>9 499 <sup>₽</sup></p>
+                                </div>
+                                <div class="collection_color">
+                                    <div class="collection_color_name">
+                                        <strong>Цвет:</strong> Белый
+                                    </div>
+
+                                    <div class="collection_color_list">
+                                        <button class="collection_color_button"></button>
+                                    </div>
+
+                                </div>
+
+                                <div class="collection_control">
+                                    <div class="collection_cart full">
+
+                                        <div class="collection_cart_control">
+                                            <div class="counter">
+                                                <button class="counter_button_icon_minus">-</button>
+                                                <span class="counter_text">1</span>
+                                                <button class="counter_button_icon_plus">+</button>
+                                            </div>
+
+                                            <button class="collection_cart_button btn">
+                                                Добавить в корзину
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collection_body">
+                        <div class="collapse collapsed">
+                            <div class="description">
+                                <button class="collapse_head">
+                                    Описание
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <div class="collapse_body">
+                                    КАСТОР комод 5 ящиков
+                                </div>
+                            </div>
+
+                            <div class="collapse">
+                                <div class="feature">
+                                    <button class="collapse_head">
+                                        Характеристики
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
+
+                                    <div class="collapse_body">
+                                        <div class="colapse_record_list">
+                                            <div class="collapse_recorde">
+                                                <span>Ширина</span>
+                                                <span>...................................</span>
+                                                <span>65см</span>
+                                            </div>
+                                            <div class="collapse_recorde">
+                                                <span>Высота </span>
+                                                <span>...................................</span>
+                                                <span>111.6см</span>
+                                            </div>
+                                            <div class="collapse_recorde">
+                                                <span>Глубина</span>
+                                                <span>..................................</span>
+                                                <span>39.6см</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="collection_reviews">
+                                    <div class="collection_reviews">
+                                        <div class="collection_reviews_head">
+                                            <div class="collection_reviews_title">
+                                                Отзывы
+                                                <span>0</span>
+                                            </div>
+                                            <a class="btn_link">Оставить
+                                                отзыв</a>
+                                        </div>
+                                        <div class="collection_reviews_body">
+                                            <div class="collection_reviews_text">
+                                                Отзывов пока нет
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <section class="kastor">
+            <div class="kastor_navbar">
+            </div>
+
+            <div class="kastor_assortment">
+                <div class="assortment_image_title">
+                    <div>
+                        <h2>КАСТОР комод 5 ящиков 650х396х1116</h2>
+                        <h4 class="kast_title">Комод КАСТОР с пятью
+                            ящиками</h4>
+                    </div>
+
+                    <div class="image_assortment">
+                        <h4 class="size_heading">КАСТОР комод 5 ящиков
+                            650х396х1116</h4>
+                        <img src="../images/detail-slider/btnimg1.png" alt="nkar" class="imagebtn1 border" />
+                        <img src="../images/detail-slider/btnimg2.png" alt="nkar" class="imagebtn2" />
+                        <img src="../images/detail-slider/btnimg3.png" alt="nkar" class="imagebtn3" />
+                    </div>
+                </div>
+
+                <div class="image_container">
+                    <img src="../images/detail-slider/image1.png" alt="nkar" class="main-image">
+                    <div class="image-box">
+                        <div class="image"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="category">
+            <div class="controls_category">
+                <div class="control_item">
+                    <div class="title">
+                        <h4>Сортировка</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+
+                    <div class="control_sub_item">
+                        <p class="sub_item_p">Цена: сначала дешевле</p>
+                        <p class="sub_item_p">Цена: сначала дороже</p>
+                    </div>
+                </div>
+
+                <div class="control_item price">
+                    <div class="title">
+                        <h4>Цена</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+
+                    <form class="control_sub_item">
+                        <div class="result price">
+                            <div class="inner_title">Выберите ценовой
+                                диапазон</div>
+                            <input type="text" class="price_input_1">
+                            <span>-</span>
+                            <input type="text" class="price_input_2">
+                        </div>
+
+                        <p class="price_item">0 - 4 999 Р</p>
+                        <p class="price_item">5 000 - 9 999 Р</p>
+                        <p class="price_item">10 000 - 14 999 Р</p>
+                        <p class="price_item">15 000 - 19 999 Р</p>
+                        <p class="price_item">20 000 - Р</p>
+
+                        <a href="#" class="btn">Применить</a>
+                    </form>
+                </div>
+
+                <div class="control_item">
+                    <div class="title">
+                        <h4>Размер</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+
+                    <div class="control_sub_item last">
+                        <div class="border_bottom">
+                            <div class="inner">
+                                <div class="inter_title">Ширина</div>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="result">
+                                <div class="inner_title">Выберите
+                                    размер</div>
+                                <input type="text" placeholder="см">
+                                <span>-</span>
+                                <input type="text" placeholder="см">
+                            </div>
+                        </div>
+                        <div class="border_bottom">
+                            <div class="inner">
+                                <div class="inter_title">Высота</div>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="result">
+                                <div class="inner_title">Выберите
+                                    размер</div>
+                                <input type="text" placeholder="см">
+                                <span>-</span>
+                                <input type="text" placeholder="см">
+                            </div>
+                        </div>
+                        <div class="border_bottom">
+                            <div class="inner">
+                                <div class="inter_title">Глубина</div>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="result">
+                                <div class="inner_title">Выберите
+                                    размер</div>
+                                <input type="text" placeholder="см">
+                                <span>-</span>
+                                <input type="text" placeholder="см">
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn1">Применить</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box_container">
+                <div class="box">
+                    <img alt="popular" src="../images/detail-slider/slide1.png" class="open_modal" />
+
+                    <h3 class="price">9 499<sup>₽</sup></h3>
+                    <p class="description">КАСТОР комод 5 ящиков RU
+                        белый</p>
+                    <button class="btn">Купить</button>
+                </div>
+
+                <div class="box">
+                    <img alt="popular" src="../images/detail-slider/slide2.png" />
+
+                    <h3 class="price">9 499<sup>₽</sup></h3>
+                    <p class="description">КАСТОР комод 5 ящиков RU
+                        белый</p>
+                    <button class="btn">Купить</button>
+                </div>
+
+                <div class="box">
+                    <img alt="popular" src="../images/detail-slider/slide3.png" />
+
+                    <h3 class="price">9 499<sup>₽</sup></h3>
+                    <p class="description">КАСТОР комод 5 ящиков RU
+                        белый</p>
+                    <button class="btn">Купить</button>
+                </div>
+
+                <div class="box">
+                    <img alt="popular" src="../images/popular-goods/popular5.png" />
+
+                    <h3 class="title">Не нашли что искали?</h3>
+                    <p class="description">
+                        Напишите нам какой товар вы хотите найти
+                    </p>
+                    <a href="#" class="btn">Оставить заявку</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="promo">
+            <div class="promo_supplier">
+                <div class="promo_supplier__title">
+                    Станьте официальным дилером бренда Гуд Лакк
+                </div>
+                <div class="promo_supplier_desc">
+                    Заполните анкету и мы оперативно вышлем условия
+                    сотрудничества и дилерские цены.
+                </div>
+                <div class="promo_supplier_button">
+                    <a href="#" class="btn">
+                        Дилерам
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="box_container">
+            <!-- Footer data will be added dynamically using JavaScript -->
+        </div>
+
+        <div class="social_media">
+            <i class="fa-brands fa-telegram"></i>
+            <i class="fa-brands fa-vk"></i>
+        </div>
+
+        <div class="scroll_top">
+            <i class="fa-solid fa-chevron-up"></i>
+        </div>
+    </footer>
+</body>
+
+</html>

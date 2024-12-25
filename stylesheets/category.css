@@ -1,0 +1,137 @@
+/* ========================== category ========================== */
+.category .container {
+    margin: 30px 0 50px 0;
+}
+
+.category .container .heading {
+    font-size: 2rem;
+    border-bottom: 1px solid var(--colorGrey);
+    padding: 2rem 0;
+}
+
+.category .container .path {
+    font-size: .8rem;
+}
+
+.category .container .box_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.category .container .box_container .box {
+    position: relative;
+    width: 25%;
+    height: 28rem;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.category .container .box_container .box img {
+    width: 100%;
+    height: 22rem;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.category .container .box_container .box:last-child img {
+    height: 20rem;
+    margin-bottom: 2rem;
+}
+
+.category .container .box_container .box img.hover-popular {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.category .container .box_container .box:hover img {
+    opacity: 0;
+}
+
+.category .container .box_container .box:last-child:hover img {
+    opacity: 1;
+}
+
+.category .container .box_container .box:hover img.hover-popular {
+    opacity: 1;
+}
+
+.category .container .box_container .box .title {
+    font-size: 1.1rem;
+    padding: 5px 0;
+}
+
+.category .container .box_container .box .description {
+    font-size: .9rem;
+}
+
+.category .container .box_container .box a {
+    background: none;
+    padding-left: 0;
+    color: var(--colorBlue);
+}
+
+.category .client {
+    display: flex;
+    gap: .5rem;
+}
+
+.category .client.hidden {
+    display: none;
+}
+
+.category .client .item {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    cursor: pointer;
+    padding: 11px;
+    border-radius: 10px;
+}
+
+.category .client .item:nth-child(1) {
+    display: none;
+}
+
+.category .client .item:hover {
+    background: var(--colorSlate);
+}
+
+.category .client .item p {
+    font-size: .8rem;
+}
+
+.category .client .item i {
+    font-size: 1.3rem;
+}
+
+
+/* ========================== @media ========================== */
+@media (max-width:1300px) {
+    .category .container .box_container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .category .container .box_container .box {
+        width: 45%;
+        text-align: center;
+    }
+
+    .category .container .box_container .box img {
+        width: 330px;
+    }
+}
+
+
+@media (max-width:700px) {
+    .category .container .box_container .box {
+        width: 100%;
+    }
+}
